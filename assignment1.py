@@ -1,0 +1,11 @@
+myname="Joshua"
+myage=17.25
+myhight=1.69
+square="x"
+length=10
+hight=15
+ageinmonth= myage * 12
+lifeexpectancy=83
+yeartolive= lifeexpectancy-myage
+hightinfeet = myhight * 3
+hightofotherperson = 170
