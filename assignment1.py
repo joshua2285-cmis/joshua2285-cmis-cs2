@@ -46,5 +46,8 @@ areaofrectangle = length * hight * 1/9
 # Introduction of my self
 print "Hello. my name is " + myname + " I am " + str(myhight) + "m tall. I am " + str(myage) + " years old. I have approximately " + str(yeartolive) + " years to live. My hight is adverage compare to other Hong Kong people, the difference between the adverage hight and my hight is " + str(differencebetweenmeandaverage) + " m."
 
+# Math
+print "If one side of a square is" ,str(square), ", then the area of the square would be", str(square * square), ". The volume of half would be", str(cube), "If the length of a rectangle is", str(length), "and the hight is", str(hight), "then the area of the rectangle would be", str(length * hight), "."
+ 
 # Smiley faces
 print ";)" * 10000
