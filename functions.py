@@ -1,3 +1,6 @@
+#import
+from math import sqrt
+from math import pi
 # Adding funcion
 def add(a,b):
 	return a+b
@@ -33,15 +36,33 @@ def hours_from_seconds(x):
 hours_from_seconds(86400)
 
 # Area of a circle
-import math
 def circle_area(a):
-	return math.pi*a**2
+	return pi*a**2
 
 circle_area(5)
 
 # Volume of sphere
-import math
 def sphere_volume(s):
-	return (s**3)*math.pi*(4/3)
+	return (s**3) * pi * 4/3
 
 print sphere_volume(5)
+
+# Diameters of a sphere
+def avg_volume(v1,v2):
+	return (((((v1)/2)**3)*pi*4/3)+((((v2)/2)**3)*pi*4/3))/2
+
+print avg_volume(10,20)
+
+# Area of triangle
+def area(l1,l2,l3):
+	p=(l1+l2+l3) / 2
+	return sqrt(p * (p - l1) * (p - l2) * (p - l3))
+
+print area(1, 2, 2.5)
+
+# Hello
+def right_align(z):
+	return len
+
+print right_align("Hello")
+
