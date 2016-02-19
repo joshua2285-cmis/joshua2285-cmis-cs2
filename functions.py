@@ -1,7 +1,6 @@
 #import
 from math import sqrt
 from math import pi
-import easygui
 # Adding funcion
 def add(a,b):
 	return a+b
@@ -37,8 +36,8 @@ def hours_from_seconds(x):
 hours_from_seconds(86400)
 
 # Area of a circle
-def circle_area(a):
-	return pi*a**2
+def circle_area(r):
+	return pi*(r**2)
 
 circle_area(5)
 
@@ -46,57 +45,69 @@ circle_area(5)
 def sphere_volume(s):
 	return (s**3) * pi * 4/3
 
-print sphere_volume(5)
+sphere_volume(5)
 
 # Diameters of a sphere
 def avg_volume(v1,v2):
 	return (((((v1)/2)**3)*pi*4/3)+((((v2)/2)**3)*pi*4/3))/2
 
-print avg_volume(10,20)
+avg_volume(10,20)
 
 # Area of triangle
 def area(l1,l2,l3):
 	p=(l1+l2+l3) / 2
 	return sqrt(p * (p - l1) * (p - l2) * (p - l3))
 
-print area(1, 2, 2.5)
+area(1, 2, 2.5)
 
 # Hello right align
 def right_align(r):
 	return " " * (80 - int(len(r))) + str(r)
 
-print right_align("Hello")
+right_align("Hello")
 
 # Hello center
 def center(z):
 	return " " * (40 - int(len(z)/2)) + str(z)
 
-print center("Hello")
+center("Hello")
 
 # Message Box
 
 def msg_box(a):
-	return easygui.msgbox(a)
+	y = "--" + "-"*len(a) + "--"
+	return"""
++{}+
+|  {}  |
++{}+""".format(y, a, y)
 
-print msg_box("Hello")
-print msg_box("I eat cats!")
+msg_box("Hello")
+msg_box("I eat cats!")
 
 # call functions twice
-adding01 = add(7,4) 
-adding02 = add(add(add(7,8),add(6,1)),add(4,7))
-subtract01 = sub(7,6)
-subtract02 = sub(sub(sub(79,4),16),sub(9,3))
-multiply01 = mul(7,3)
-multiply02 = mul(mul(mul(mul(74,1),mul(12,756)),0),100000)
-division01 = div(22,7)
-division02 = div(143, 43) 
-hours_from_second = hours_from_seconds(86400)
-circle_area = circle_area(5)
-avg_volume = avg_volume(10,20)
-area = area(1, 2, 2.5)
-right_align = right_align("Hello")
-center = center("Hello")
-msg_box01 = msg_box("Hello")
-msg_box02 = msg_box("I eat cats!")
+adding01 = add(1,2) 
+adding02 = add(add(add(1,18),add(1,2)),add(5,2))
+subtract01 = sub(4,2)
+subtract02 = sub(sub(sub(65,2),43),sub(44,21))
+multiply01 = mul(4,6)
+multiply02 = mul(mul(mul(mul(21,4),mul(3,5)),1),1240)
+division01 = div(1,1)
+division02 = div(142123, 43) 
+hours_from_second01 = hours_from_seconds(5000)
+hours_from_second02 = hours_from_seconds(1)
+circle_area01 = circle_area(10)
+circle_area02 = circle_area(20)
+avg_volume01 = avg_volume(2,5)
+avg_volume02 = avg_volume(8,1)
+area01 = area(4, 7, 5)
+area02 = area(6, 8, 9)
+right_align01 = right_align("My name is Joshua")
+right_align02 = right_align("I love food!!!")
+center01 = center(">.<")
+center02 = center(":P")
+msg_box01 = msg_box("Welcome!!!!")
+msg_box02 = msg_box("How are you?")
+
+#Out Put
 
 
