@@ -1,6 +1,6 @@
-# GPA cawlculation
-def add(a, b, c, d, e, f, g, x):
-	gpa = ((a + b + c + d + e + f + g) / x) *4
+# GPA calculation
+def gpacalculation(a, b, c, d, e, f, g):
+	gpa = (((a + b + c + d + e + f + g) / 7.0) *4.0)/100.0
 	return gpa
 
 # output
@@ -22,7 +22,7 @@ def main():
 	f = raw_input("What is your percentage for another of your classes? In whole number ")
 	g = raw_input("What is your percentage for another of your classes? In whole number ")
 	
-	gpa = ((add(int(a), int(b), int(c), int(d), int(e), int(f), int(g))) / int(x)) * 4
-	print output()
+	gpa = gpacalculation(int(a), int(b), int(c), int(d), int(e), int(f), int(g))
+	print output(name, gpa)
 
 main()
