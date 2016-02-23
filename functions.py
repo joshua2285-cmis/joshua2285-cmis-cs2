@@ -109,5 +109,23 @@ msg_box01 = msg_box("Welcome!!!!")
 msg_box02 = msg_box("How are you?")
 
 #Out Put
+print msg_box(str(adding01))
+print msg_box(str(adding02))
+print msg_box(str(subtract01))
+print msg_box(str(subtract02))
+print msg_box(str(multiply01))
+print msg_box(str(multiply02))
+print msg_box(str(division01))
+print msg_box(str(division02))
+print msg_box(str(hours_from_second01))
+print msg_box(str(hours_from_second02))
+print msg_box(str(avg_volume01))
+print msg_box(str(avg_volume02))
+print msg_box(str(area01))
+print msg_box(str(area02))
+print msg_box(str(right_align01))
+print msg_box(str(right_align02))
+print msg_box(str(center01))
+print msg_box(str(center02))
 
 
