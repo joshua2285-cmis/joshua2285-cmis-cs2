@@ -47,11 +47,13 @@ def sphere_volume(s):
 
 sphere_volume(5)
 
-# Diameters of a sphere
+# Average volume of sphere
 def avg_volume(v1,v2):
-	return (((((v1)/2)**3)*pi*4/3)+((((v2)/2)**3)*pi*4/3))/2
+	
+	return (sphere_volume(v1) + sphere_volume(v2)) /2
+	#return (((((v1)/2)**3)*pi*4/3)+((((v2)/2)**3)*pi*4/3))/2
 
-avg_volume(10,20)
+print avg_volume(10,20)
 
 # Area of triangle
 def area(l1,l2,l3):
