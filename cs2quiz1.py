@@ -1,7 +1,8 @@
 #Part 1: Terminology (15 points)
 #1 1pt) What is the symbol "=" used for?
 #	assignment operator
-#
+
+#wrong
 #
 #2 3pts) Write a technical definition for 'function'
 #	 A function is a named sequence of statements that performs a computation. 
@@ -52,6 +53,12 @@ from math import pi
 # calculation of radius
 # a = pi * r**2
 
+#1 pt for header line
+#3 pt for correct formula    -1
+#1 pt for return value
+#1 pt for parameter name
+#1 pt for function name
+
 def radius(A1):
 	c1 = sqrt(float(A1)/pi)
 	return c1
@@ -64,6 +71,13 @@ def radius(A3):
 	c3 = sqrt(float(A3)/pi)
 	return c3
 # Output
+
+#1pt for header line
+#1pt for parameter names
+#1pt for return value
+#1pt for correct output format
+#3pt for correct use of format function
+
 def output(c1, c2, c3, t):
 	return """
 Circle	Diameter
@@ -72,7 +86,16 @@ c2	{}
 c3	{}
 Totals	{}
 """ .format(c1, c2, c3, t)
+
 # Main 
+
+#1pt header line
+#1pt getting input
+#1pt converting input
+#1pt for calling output function
+#2pt for correct diameter formula
+#1pt for variable names
+
 def main():
 	A1 = raw_input("Area of c1: ")
 	A2 = raw_input("Area of c2: ")
@@ -84,3 +107,7 @@ def main():
 	print output(c1, c2, c3, t)
 
 main()
+
+#1pt explanatory comments
+#1pt code format
+
