@@ -13,13 +13,6 @@ I am thinking of a number from  {} to {}.
 
 	guessnumber = int(raw_input("What do you think it is?: "))
 	wrongby = abs(thenumber - guessnumber)
-	
-	def findoverorunder():
-		if thenumber < guessnumber:
-			overorunder == "over"
-		elif thenumber > guessnumber:
-			overorunder == "under"
-		return overorunder
 
 	if thenumber == guessnumber:
 			print """
@@ -28,12 +21,18 @@ Your guess was {}.
 That's correct! You must be psychic!
 """ .format(thenumber, guessnumber)
 
-	elif thenumber != guessnumber :
+	elif thenumber > guessnumber :
 		print """
 The target was {}.
 Your guess was {}.
-That's {} by {}.
-""" .format(thenumber,guessnumber, overorunder,  wrongby)
+That's under by {}.
+""" .format(thenumber,guessnumber, wrongby)
+	else:
+		print """
+The target was {}.
+Your guess was {}.
+That's over by {}.
+""" .format(thenumber,guessnumber, wrongby)
 
 main()
 
