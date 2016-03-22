@@ -1,6 +1,6 @@
 # GPA calculation
-def gpacalculation(class01,class02,class03,class04,class05,class06,class07 ):
-	gpa = (((class01,class02,class03,class04,class05,class06,class07) / 7.0) *4.0)/100.0
+def gpacalculation(class01,class02,class03,class04,class05,class06,class07):
+	gpa = (((class01 +class02+class03+ class04 + class05 +class06 +class07) / 7.0) *4.0)/100.0
 	return gpa
 
 # output
