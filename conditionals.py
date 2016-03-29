@@ -13,4 +13,6 @@ def coding():
 
 def main():
 	incertcode = raw_input("Type the password: ")
-	correctpass = 
+	correctpass = random.randint
+
+	http://stackoverflow.com/questions/18722753/trying-to-generate-a-series-of-unique-random-numbers
