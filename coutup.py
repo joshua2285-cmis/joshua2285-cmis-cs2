@@ -18,8 +18,13 @@
 #countdown_from_to(0,99)
 
 def adder():
+	runtotal = 0.0
+	Next_num = float(raw_input("Next Number: "))
 	if Next_num != "":
-		 raw_input("Next Number: ")
+		runtotal += Next_num
+		print total
+		adder()
+		
 adder()
 
  
