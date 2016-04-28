@@ -17,14 +17,29 @@
 	#	
 #countdown_from_to(0,99)
 
-def adder():
-	runtotal = 0.0
-	Next_num = float(raw_input("Next Number: "))
-	if Next_num != "":
-		runtotal += Next_num
-		print total
-		adder()
 		
-adder()
+#def adder2(running_total = 0):
+#	print "The running total is {}.".format(running_total)
+#	number = raw_input("Next Number: ")
+#	if number != "":
+#		running_total += float(number)
+#		adder2(running_total) 
+#	else:
+#		print "The sum is {}.".format(running_total)
+#adder2()
 
- 
+
+def biggest(bignum = -float('inf')):
+	number_1 = raw_input("Next Number: ")
+	if number_1 == "":
+		print "The biggest number is {}.".format(bignum)
+
+	elif float(number_1) < float(bignum):
+		biggest(bignum)
+
+	elif float(number_1) > float(bignum):
+		bignum = number_1
+		biggest(bignum)
+
+biggest()
+
