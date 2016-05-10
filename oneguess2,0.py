@@ -29,7 +29,6 @@ def main(Round = 1):
 	else:
 		print Round
 		Round += 1
-		thenumber = int(random.randint(0,100))
 		guess()
 		main(Round)
 		
