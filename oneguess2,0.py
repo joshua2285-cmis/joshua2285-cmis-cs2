@@ -1,11 +1,10 @@
 #import
 import random
 
-thenumber = int(random.randint(0,100))
 
-def guess(numberoftimes = 0):
+def guess(numberoftimes = 1):
 	guessnumber = int(raw_input("next: "))
-	
+	thenumber = game(Round = 5)
 	if numberoftimes == 5:
 		print "you fail"
 
@@ -21,17 +20,25 @@ def guess(numberoftimes = 0):
 		print "Too low"
 		numberoftimes += 1
 		guess(numberoftimes)
-
-
-def main(Round = 1):
+	
+def game(Round = 1):
+	if Round == 5:
+		thenumber = int(random.randint(0,100))
+		return thenumber
 	if Round == 4:
 		print "Thanks for playing."
 	else:
 		print Round
+		
 		Round += 1
 		guess()
-		main(Round)
-		
+		game(Round)
+
+
+def main():
+	game()	
+	
+
 	
 main()
 
