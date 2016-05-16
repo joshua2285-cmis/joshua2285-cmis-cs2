@@ -11,9 +11,10 @@ def correctpass():
 
 # Compare
 def compare():
-	incertcode = str(raw_input("Type the password: "))
 	correctpass = correctpass()
-
+	print correctpass
+	incertcode = str(raw_input("Type the password: "))
+	
 	if incertcode == correctpass:
 		return True
 
@@ -22,8 +23,9 @@ def compare():
 
 # Main
 def main():
-	
+	correctpass()
+	compare()
+
+main()
 	
 
-	
-main()
