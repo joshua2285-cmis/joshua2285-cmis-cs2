@@ -21,6 +21,10 @@ def compare():
 	else:
 		return False
 
+# Win or lose
+def result():
+	
+
 # Main
 def main():
 	correctpass()
