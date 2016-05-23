@@ -11,7 +11,7 @@
 #	When would the recursive funciton end, and set a base case accordly.
 #
 #
-# 4) How do we put data into a function call?
+# 4) How do we put data into a function call?   -1
 #	define
 #
 # 
@@ -24,21 +24,21 @@
 # Read the following function definitions and function calls.
 # Then determine the values of the variables q1-q20.
 
-#a1 = 2
-#a2 = 6
+#a1 = 2  -1
+#a2 = 6  -1
 #a3 = -1
 
 #b1 = 2
-#b2 = 
-#b3 =
+#b2 =    -1
+#b3 =    -1
 
-#c1 =
-#c2 =
-#c3 =
+#c1 =    -1
+#c2 =    -1
+#c3 =    -1
 
-#d1 =
-#d2 =
-#d3 =
+#d1 =   -1
+#d2 =   -1
+#d3 =   -1
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
