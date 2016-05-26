@@ -24,13 +24,31 @@
 
 #countdown()
 
-def counting():
-	x = raw_input("The Number: ")
-	while x < 0:
-		print x
-		x +=n
-	while x >0:
-		print x
-		x-=n
-	while x = 0:
-		pass
+#def counting():
+#	x = float(raw_input("The Number: "))
+#	while x < 0:
+#		print x
+#		x +=1
+#	while x > 0:
+#		print x
+#		x -=1
+#counting()
+
+
+
+#def countfrom2(x,y):
+	
+#	while x < y:
+#		print x
+#		x +=1
+#	while y < x:
+#		print x
+#		x -=1
+#countfrom2(20,12)
+
+
+def add0dds(n):
+	if n<0:
+		
+	elif n>0:
+
